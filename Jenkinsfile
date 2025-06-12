@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/prakashjram/Github-Jenkins.git'
+                git branch: 'main', url: 'https://github.com/prakashjram/cxoProj.git'
             }
         }
          stage('EC2') {
