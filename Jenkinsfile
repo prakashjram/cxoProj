@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     
-                    withCredentials([sshUserPrivateKey(credentialsId: 'GHTokenCxo', keyFileVariable: 'SSH_KEY')]) {
+                    withCredentials([sshUserPrivateKey(credentialsId: 'cxoSshKey', keyFileVariable: 'SSH_KEY')]) {
                        
                         sh '''
                             ssh -o StrictHostKeyChecking=no -i ${SSH_KEY} ${EC2_USER}@${EC2_IP} <<EOF
