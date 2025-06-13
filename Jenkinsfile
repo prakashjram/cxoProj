@@ -9,7 +9,7 @@ pipeline {
         }
          stage('EC2') {
             steps {
-                echo 'welcome to ec2'                 
+                echo 'welcome to ec2-Jenkins'                 
             }
         }
     }
